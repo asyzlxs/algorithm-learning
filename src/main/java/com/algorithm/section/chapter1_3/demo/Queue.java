@@ -82,7 +82,7 @@ public class Queue<Item> {
         }
         StdOut.println("(" + q.size() + " left on queue)");
         Iterator<String> i = q.iterator();
-        while (i.hasNext()){
+        while (i.hasNext()) {
             StdOut.print(i.next() + " ");
         }
     }

@@ -22,9 +22,10 @@ public class BinarySearch {
         int mid = low + (high - low) / 2;
 
         while (low <= high) {
-            if(a[mid] > k) high = mid;
-            if(a[mid] < k) low = mid;
-            return mid;
+            if (a[mid] == k) return mid;
+            if (a[mid] > k) high = mid - 1;
+            if (a[mid] < k) low = mid + 1;
+            mid = low + (high - mid) / 2;
         }
         return -1;
 
